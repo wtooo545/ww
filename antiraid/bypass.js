@@ -14,7 +14,7 @@ module.exports = {
     description: `Permet de voir quelles rank peuvent bypass des permissions.`,
     async execute(client, message, args) {
 
-    if (owner.get(`owners.${message.author.id}`) || message.member.roles.cache.has(perm1) || message.member.roles.cache.has(perm2) || message.member.roles.cache.has(perm3) || config.bot.buyer.includes(message.author.id)  ) {
+    if (owner.get(`owners.${message.author.id}`) || message.member.roles.cache.has(p1) || message.member.roles.cache.has(p2) || message.member.roles.cache.has(p3) || config.bot.buyer.includes(message.author.id)  ) {
 
         let color = cl.fetch(`color_${message.guild.id}`)
         if (color == null) color = config.bot.couleur

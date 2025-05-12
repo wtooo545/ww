@@ -181,122 +181,78 @@ module.exports = {
                 )
 
             const panel = new Discord.MessageEmbed()
-                .setAuthor({ name: `🛡️ • Panel des Sécurités` })
+                .setAuthor({ name: `Panel Antiraid` })
                 .setDescription(`
 
              Antibot : ${antibot}
-
              Antiadmin : ${antiadmin}
-
              Antiban : ${antiban}
-
              Antichannel create : ${antichannelcreate}
-
              Antichannel delete : ${antichanneldelete}
-
              Antichannel update : ${antichannelupdate}
-
              Antirôle create : ${antirolecreate}
-
              Antirôle delete : ${antiroledelete}
-
              Antirôle update : ${antiroleupdate}
-
              Anti Update : ${antiupdate}
-
              Anti Down : ${antidown}
-
              Anti Everyone : ${antieveryone}
-
              Antilink : ${antilink} 
-            *(Ignoré par la whitelist)*
-
              Anti webhook : ${antiwebhook}
-               
                `)
 
-                .setFooter({ text: `Faites la commande ${pf}bypass pour obtenir des informations supplémentaires` })
+
                 .setColor(color)
 
             const panelactive = new Discord.MessageEmbed()
-                .setAuthor({ name: `🛡️ • Panel des Sécurités` })
+                .setAuthor({ name: `Panel Antiraid` })
                 .setDescription(`
 
                 Antibot : ${emojion}
-
                 Antiban : ${emojion}
-   
                 Antichannel create : ${emojion}
-   
                 Antichannel delete : ${emojion}
-   
-                Antichannel update : ${emojion}
-   
-                Antirôle create : ${emojion}
-   
-                Antirôle delete : ${emojion}
-   
+                Antichannel update : ${emojion} 
+                Antirôle create : ${emojion}  
+                Antirôle delete : ${emojion} 
                 Antirôle update : ${emojion}
-   
                 Anti Update : ${emojion}
-
                 Anti Down : ${emojion}
-   
                 Anti Everyone : ${emojion}
-   
                 Antilink : ${emojion} 
-               *(Ignoré par la whitelist)*
-   
                 Anti webhook : ${emojion}
-                  
                   `)
 
 
-                .setFooter({ text: `Faites la commande ${pf}bypass pour obtenir des informations supplémentaires` })
+
                 .setColor(color)
 
             const paneldesactive = new Discord.MessageEmbed()
-                .setAuthor({ name: `🛡️ • Panel des Sécurités` })
+                .setAuthor({ name: `Panel Antiraid` })
                 .setDescription(`
 
              Antibot : ${emojioff}
-
              Antiadmin : ${antiadmin}
-
              Antiban : ${emojioff}
-
              Antichannel create : ${emojioff}
-
              Antichannel delete : ${emojioff}
-
              Antichannel update : ${emojioff}
-
              Antirôle create : ${emojioff}
-
              Antirôle delete : ${emojioff}
-
              Antirôle update : ${emojioff}
-
              Anti Update : ${emojioff}
-
              Anti Down : ${emojioff}
-
              Anti Everyone : ${emojioff}
-
              Antilink : ${emojioff} 
-            *(Ignoré par la whitelist)*
-
-             Anti webhook : ${emojioff}
-               
+             Anti webhook : ${emojioff}         
                `)
 
-                .setFooter({ text: `Faites la commande ${pf}bypass pour obtenir des informations supplémentaires` })
+
                 .setColor(color)
 
             const panelselect = new Discord.MessageActionRow().addComponents(
                 new Discord.MessageSelectMenu()
                     .setCustomId('Funny')
-                    .setPlaceholder(`Protections`)
+                    .setPlaceholder(`Configurer un module`)
                     .addOptions([
                         {
                             label: 'Punition',

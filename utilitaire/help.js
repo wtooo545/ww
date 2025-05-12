@@ -372,9 +372,6 @@ Permet d'effectuer un calcul.
 **\`${pf}wiki <mot-clé>\`**
 Permet de faire une recherche wikipédia.
 
-**\`${pf}bypass\`**
-Permet de voir quelles rank peuvent bypass des permissions.
-
 **\`${pf}support\`**
 Permet d'avoir le serveur support du bot.
 
@@ -583,35 +580,19 @@ Permet d'afficher les logs des embeds supprimés.
 *Les paramètres encadrés par* \`<>\` *sont obligatoires, tandis que ceux encadrés par* \`[]\` *sont facultatifs.*
 
 **\`${pf}sanction\`**
-Permet de choisir la sanction si un membre non owner/wl tente de faire une action non autorisé.
+Permet de choisir la sanction si un membre non owner/wl tente de faire une action interdite.
+
+**\`${pf}bypass\`**
+Permet de voir quelles permissions peuvent bypass l'antiraid.
 
 **\`${pf}secur\`**
 Configurer les protections de l'antiraid sur le serveur.
 
-**\`${pf}secur on\`**
-Active toutes les protections de l'antiraid.
+**\`${pf}secur on/off\`**
+Active/désactive toutes les protections de l'antiraid.
 
-**\`${pf}secur off\`**
-Désactive toutes les protections de l'antiraid.
-
-Commandes [+]
-**\`${pf}antiadmin on/off\`**
-**\`${pf}antiban on/off\`**
-**\`${pf}antiupdate on/off\`**
-**\`${pf}antibot on/off\`**
-**\`${pf}antidown on/off\`**
-**\`${pf}antilink invite/all/off\`**
-**\`${pf}antieveryone on/off\`**
-**\`${pf}antichannel create on/off\`**
-**\`${pf}antichannel delete on/off\`**
-**\`${pf}antichannel update on/off\`**
-**\`${pf}antirole create on/off\`**
-**\`${pf}antirole delete on/off\`**
-**\`${pf}antirole update on/off\`**
-**\`${pf}antiwebhook on/off\`**
 **\`${pf}server lock/unlock\`**
-
-
+Ouvre/ferme l'accès au serveur.
                           `)
                 .setFooter({ text: `${footer} | Préfixe : ${pf}` })
                 .setColor(color)
